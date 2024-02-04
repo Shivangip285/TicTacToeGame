@@ -5,12 +5,12 @@ public enum GameStatus {
     GameOver("Game Over"),
     GameInProgress("Game in progress");
 
-    private final String value;
+    private final String status;
 
-    GameStatus(String sortType) {
-        this.value = sortType;
+    GameStatus(String status) {
+        this.status = status;
     }
     @Override
-    public String toString() { return value; }
+    public String toString() { return status; }
 
 }

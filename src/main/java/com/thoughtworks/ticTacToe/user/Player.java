@@ -9,7 +9,7 @@ import com.thoughtworks.ticTacToe.Enum.MoveStatus;
 public class Player {
     private String name;
     private MoveTypes moveType;
-    private int moveTypeBalance=4;
+//    private int moveTypeBalance=4;
 
     private Board board;
 
@@ -22,7 +22,7 @@ public class Player {
     public MoveStatus playMoveForPlayer(Cell cell){
         MoveStatus moveStatus = board.updateGridCellWith_X_OR_O(cell, String.valueOf(moveType));
         if(moveStatus.equals(MoveStatus.ValidMove)){
-            moveTypeBalance-=1;
+            moveType.setValue(moveType.getValue()-1);
         }
         if(board.gridStatus().equals(GameStatus.WonGame)){
             System.out.println(name+" "+board.gridStatus().toString());
