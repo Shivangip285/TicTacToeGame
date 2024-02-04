@@ -25,12 +25,11 @@ public class GameMoveSequencer {
            player= firstPlayer;
         }
         MoveStatus moveStatus = player.playMoveForPlayer(cell);
-        if(moveStatus.equals(MoveStatus.InvalidMove)){
-            lastPlayer= getNextPlayer(player,moveStatus);
-        }
+        lastPlayer= getNextPlayer(player,moveStatus);
     }
     public Player getNextPlayer(Player lastPlayer, MoveStatus moveStatus){
             if(moveStatus.equals(MoveStatus.InvalidMove)){
+                System.out.println(MoveStatus.InvalidMove);
                 return lastPlayer.equals(firstPlayer)?firstPlayer:secondPlayer;
             }
             return lastPlayer.equals(firstPlayer)?secondPlayer:firstPlayer;
