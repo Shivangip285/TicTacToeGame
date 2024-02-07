@@ -1,15 +1,14 @@
-package com.thoughtworks.ticTacToe.user;
+package com.thoughtworks.ticTacToe.gamePlayer;
 
 import com.thoughtworks.ticTacToe.Enum.GameStatus;
 import com.thoughtworks.ticTacToe.Enum.MoveTypes;
-import com.thoughtworks.ticTacToe.gameBoard.Board;
-import com.thoughtworks.ticTacToe.gameBoard.Cell;
+import com.thoughtworks.ticTacToe.gameEntity.gameBoard.Board;
+import com.thoughtworks.ticTacToe.gameEntity.gameBoard.Cell;
 import com.thoughtworks.ticTacToe.Enum.MoveStatus;
 
 public class Player {
     private String name;
     private MoveTypes moveType;
-//    private int moveTypeBalance=4;
 
     private Board board;
 

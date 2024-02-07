@@ -1,4 +1,4 @@
-package com.thoughtworks.ticTacToe.gameBoard;
+package com.thoughtworks.ticTacToe.gameEntity.gameBoard;
 
 import com.thoughtworks.ticTacToe.Enum.GameStatus;
 import com.thoughtworks.ticTacToe.Enum.MoveStatus;

@@ -1,4 +1,4 @@
-package com.thoughtworks.ticTacToe.gameBoard;
+package com.thoughtworks.ticTacToe.gameEntity.gameBoard;
 
 import lombok.Builder;
 import lombok.Data;

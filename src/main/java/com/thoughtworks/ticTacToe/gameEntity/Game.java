@@ -1,18 +1,18 @@
-package com.thoughtworks.ticTacToe;
+package com.thoughtworks.ticTacToe.gameEntity;
 
 import com.thoughtworks.ticTacToe.Enum.GameStatus;
 import com.thoughtworks.ticTacToe.Enum.MoveStatus;
-import com.thoughtworks.ticTacToe.gameBoard.Cell;
-import com.thoughtworks.ticTacToe.user.Player;
+import com.thoughtworks.ticTacToe.gameEntity.gameBoard.Cell;
+import com.thoughtworks.ticTacToe.gamePlayer.Player;
 
 
-public class GameMoveSequencer {
+public class Game {
     private Player firstPlayer;
     private Player secondPlayer;
 
     private Player lastPlayer;
 
-    public GameMoveSequencer(Player firstPlayer, Player secondPlayer) {
+    public Game(Player firstPlayer, Player secondPlayer) {
         this.firstPlayer = firstPlayer;
         this.secondPlayer = secondPlayer;
     }
